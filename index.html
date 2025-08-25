@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Name - Portfolio</title>
+        <meta
+            name="description"
+            content="Personal portfolio showcasing web development projects and professional experience"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Font Awesome for icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <!-- Logo placeholder -->
+                    <div class="nav-logo">
+                        <a href="#home">Ivana Widjanarko</a>
+                    </div>
+
+                    <!-- Navigation links -->
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home" onclick="scrollToSection('home')"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#about" onclick="scrollToSection('about')"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#portfolio"
+                                onclick="scrollToSection('portfolio')"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#contact"
+                                onclick="scrollToSection('contact')"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- Mobile menu toggle -->
+                    <button
+                        class="mobile-menu-toggle"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- LANDING SECTION -->
+        <!-- Replace with your personal information -->
+        <section class="landing" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hi, I'm Ivana Widjanarko</h1>
+                        <p class="hero-subtitle">
+                            <!-- REPLACE: Add your professional title/role -->
+                            Junior Web Developer & Technology Enthusiast
+                        </p>
+                        <p class="hero-description">
+                            <!-- REPLACE: Add your personal introduction (2-3 sentences) -->
+                            Passionate about bridging business and technology
+                            through data-driven solutions and intuitive design.
+                            I specialize in ERP systems, project management, and
+                            building responsive web prototypes with modern
+                            tools. With experience in analytics, and system
+                            design, I enjoy creating solutions that improve
+                            efficiency, transparency, and user experience.
+                        </p>
+                        <div class="hero-actions">
+                            <button
+                                class="btn-primary"
+                                onclick="scrollToSection('portfolio')"
+                            >
+                                View My Work
+                            </button>
+                            <button
+                                class="btn-secondary"
+                                onclick="scrollToSection('contact')"
+                            >
+                                Get In Touch
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <!-- REPLACE: Add your background-removed PNG profile photo -->
+                        <img
+                            src="images/SF_headshot.jpg"
+                            alt="Ivana Widjanarko Profile Photo"
+                            class="profile-photo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        <!-- REPLACE: Add description of your work -->
+                        A selection of recent projects showcasing my skills in
+                        web development, design, and problem-solving across
+                        various technologies and industries.
+                    </p>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="project-grid">
+                    <!-- PROJECT CARD 1 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_1_erp/dashboard.png"
+                                alt="SAP ERP Dairy Simulation"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                SAP ERP Dairy Simulation
+                            </h3>
+                            <p class="project-description">
+                                A data-driven supply chain and logistics
+                                dashboard built with SAP ERP and Tableau,
+                                offering hands-on experience in procurement,
+                                inventory management, and real-time business
+                                analytics.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(1)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 2 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_2_prototype/home_page.png"
+                                alt="Project Future Interface Prototype"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Project Future Interface Prototype
+                            </h3>
+                            <p class="project-description">
+                                A responsive web-based prototype built with
+                                HTML, CSS, and Bootstrap to streamline client
+                                onboarding, project evaluation, and student
+                                recruitment for Project Future.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(2)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 3 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_3_monster/sql_code.png"
+                                alt="Monster Video Database System"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Monster Video Database System
+                            </h3>
+                            <p class="project-description">
+                                A relational database system designed for a home
+                                theater company, supporting appraisals,
+                                proposals, installations, billing workflows,
+                                multiple employee roles, and customer types.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(3)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 4 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_4_AIS/microsoft_project.png"
+                                alt="Accounting System Upgrade Proposal"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Accounting System Upgrade Proposal
+                            </h3>
+                            <p class="project-description">
+                                An ERP implementation and upgrade project
+                                transitioning from QuickBooks to Oracle
+                                NetSuite, providing hands-on experience in
+                                business case development, financial analysis,
+                                and system migration.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(4)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 5 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="5">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_5_bloomcha/homepage.png"
+                                alt="Bloomcha Bakes Website Prototype"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Bloomcha Bakes Website Prototype
+                            </h3>
+                            <p class="project-description">
+                                A responsive baking shop website prototype with
+                                role-based access, featuring a customer contact
+                                form and an admin panel for menu management.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(5)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 6 -->
+                    <!-- REPLACE: Update project information, title, and description -->
+                    <div class="project-card" data-project="6">
+                        <div class="project-image">
+                            <img
+                                src="images/Project_5_Interactive/audio.png"
+                                alt="Audio-Interactive Bubble Visualization"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                Audio-Interactive Bubble Visualization
+                            </h3>
+                            <p class="project-description">
+                                An audio-reactive bubble visualization built in
+                                TouchDesigner, where colored bubbles move and
+                                shift in sync with the beat of the music.
+                            </p>
+                            <button
+                                class="btn-view-details"
+                                onclick="openModal(6)"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT SECTION -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <h2 class="footer-title">Let's Work Together</h2>
+                        <p class="footer-description">
+                            <!-- REPLACE: Add your contact message -->
+                            I'm always open to discussing new opportunities and
+                            interesting challenges. Let's create something
+                            amazing together.
+                        </p>
+
+                        <!-- REPLACE: Add your email address -->
+                        <a
+                            href="mailto:ivana.widjanarko@gmail.com"
+                            class="contact-email"
+                        >
+                            ivana.widjanarko@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="social-links">
+                            <!-- REPLACE: Add your actual LinkedIn and GitHub URLs -->
+                            <a
+                                href="https://www.linkedin.com/in/ivana-widjanarko"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a
+                                href="https://github.com/ivanaw9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                            >
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <!-- OPTIONAL: Add more social links -->
+                            <a
+                                href="https://www.instagram.com/ivanawidjanarko?igsh=bnc2a2d6aDNkb2th&utm_source=qr"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                            >
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <p class="footer-copyright">
+                        <!-- REPLACE: Update with your name and current year -->
+                        © 2025 Ivana Widjanarko. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MODAL FOR PROJECT DETAILS -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal" id="projectModal">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalTitle">
+                            Project Title
+                        </h2>
+                        <div class="modal-tags" id="modalTags">
+                            <!-- Project tags will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="modal-images" id="modalImages">
+                            <!-- Project images will be inserted here -->
+                        </div>
+
+                        <div class="modal-description">
+                            <h3>About This Project</h3>
+                            <p id="modalDescription">
+                                <!-- Project description will be inserted here -->
+                            </p>
+                        </div>
+
+                        <div class="modal-details">
+                            <h3>Technical Details</h3>
+                            <div class="tech-stack" id="modalTechStack">
+                                <!-- Technology stack will be inserted here -->
+                            </div>
+                        </div>
+
+                        <div class="modal-links" id="modalLinks">
+                            <!-- Project links will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>

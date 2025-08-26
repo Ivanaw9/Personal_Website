@@ -11,7 +11,7 @@
 
 // ===== PROJECT DATA =====
 /**
- * REPLACE THIS SECTION: Update with your actual project information
+ * Update with actual project information
  * Each project should have: title, description, images, technologies, and links
  */
 const projectData = {
@@ -116,7 +116,7 @@ Forecasted demand, executed push/pull strategies, and reduced carbon tax impact 
             "images/Project_5_bloomcha/chatbox.png",
         ],
         technologies: [
-            "HTML, CSS, Python, Flask Application, SQLAlchemy, GitHub Copilot",
+            "HTML", "CSS", "Python", "Flask Application", "SQLAlchemy", "GitHub Copilot",
         ],
         links: [
             {
